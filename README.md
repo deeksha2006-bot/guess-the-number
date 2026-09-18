@@ -1,7 +1,7 @@
 import random
 
 def number_guessing_game():
-    print("🎲 Welcome to Number Guessing Game! 🎲")
+    print(" Welcome to Number Guessing Game! ")
     number = random.randint(1, 100)  # computer picks a random number
     attempts = 0
 
@@ -10,11 +10,11 @@ def number_guessing_game():
         attempts += 1
 
         if guess < number:
-            print("Too low! Try again ⬇️")
+            print("Too low! Try again ")
         elif guess > number:
-            print("Too high! Try again ⬆️")
+            print("Too high! Try again ")
         else:
-            print(f"🎉 Correct! You guessed it in {attempts} tries 🎉")
+            print("Correct! You guessed it in {attempts} tries ")
             break
 
 # Run the game
